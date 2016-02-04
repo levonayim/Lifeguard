@@ -75,6 +75,7 @@ lifeguard.desktop = {
 		$('#lifeguard_div_available .available_after_age',this.target).css( "visibility", "visible" );
 		
 		//show sfa text
+		$('#lifeguard_div_notes .ui-block-b',this.target).css( "visibility", "visible" );
 		$('#lifeguard_div_notes .ui-block-c',this.target).css( "visibility", "visible" );
 	},
 
