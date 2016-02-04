@@ -220,7 +220,7 @@ lifeguard.desktop = {
 			} else if (ageIndex == 1){
 				//$('#lifeguard_instructor_div_buttons .bronze_medallion').addClass("ui-btn-active");
 				//$('#lifeguard_instructor_div_buttons .bronze_cross').addClass("ui-btn-active");
-				$('#lifeguard_instructor_div_buttons .lifesaving_instructor').addClass("ui-state-disabled");
+				
 				$('#lifeguard_instructor_div_sorry',this.target).css( "display", "none" );
 				/*
 				$('#bronze_star').css( "visibility", "hidden" );
