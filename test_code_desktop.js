@@ -220,7 +220,7 @@ lifeguard.desktop = {
 			} else if (ageIndex == 1){
 				//$('#lifeguard_instructor_div_buttons .bronze_medallion').addClass("ui-btn-active");
 				//$('#lifeguard_instructor_div_buttons .bronze_cross').addClass("ui-btn-active");
-				
+				$('#lifeguard_instructor_div_buttons .lifesaving_instructor').addClass("ui-state-disabled");
 				$('#lifeguard_instructor_div_sorry',this.target).css( "display", "none" );
 				/*
 				$('#bronze_star').css( "visibility", "hidden" );
@@ -304,14 +304,6 @@ lifeguard.desktop = {
 				$('#bcrpa_aquafit_instructor_div_buttons',this.target).css( "display", "none" );
 				$('#bcrpa_aquafit_instructor_div_notes',this.target).css( "visibility", "hidden" );
 			} else if (ageIndex == 3){
-				$('#bcrpa_aquafit_instructor_div_buttons',this.target).css( "display", "none" );
-				$('#bcrpa_aquafit_instructor_div_notes',this.target).css( "visibility", "hidden" );
-				/*
-				$('#red_cross_swimming_instructor_div_sorry').css( "display", "none" );
-				$('#red_cross_swimming_instructor_div_buttons .assistant_water_safety_instructor').addClass("ui-btn-active");
-				$('#red_cross_swimming_instructor_div_buttons .water_safety_instructor').addClass("ui-btn-active");
-				*/
-			} else if (ageIndex == 4){
 				$('#bcrpa_aquafit_instructor_div_sorry',this.target).css( "display", "none" );
 				//$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory').addClass("ui-btn-active");
 				//$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit').addClass("ui-btn-active");
