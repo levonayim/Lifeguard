@@ -151,7 +151,6 @@ lifeguard.desktop = {
 				$('#lifeguard .national_lifeguard_water_park',this.target).addClass("ui-state-disabled");
 			} else if (ageIndex == 1){
 				$('#lifeguard .bronze_star',this.target).css( "visibility", "hidden" );
-				$('#lifeguard .standard_first_aid',this.target).css("visibility", "hidden" );
 				//$('#lifeguard .bronze_star').css( "display", "none" );
 				//$('#lifeguard .bronze_medallion').addClass("ui-btn-active");
 				//$('#lifeguard .bronze_cross').addClass("ui-btn-active");
