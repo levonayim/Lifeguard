@@ -22,6 +22,6 @@ var result_urls={
 	'assistant_water_safety_instructor':assistant_water_safety_instructor_url,
 	'water_safety_instructor':water_safety_instructor_url,
 	'fitness_theory':fitness_theory_url,
-	'instructor_aquafit':instructor_aquafit_url
+	'instructor_aquafit':instructor_aquafit_url,
 	'cpr_c': cpr_c_url
 } 
