@@ -205,7 +205,7 @@ lifeguard.desktop = {
 				
 				$('#lifeguard_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
 				$('#lifeguard_div_available .ui-block-c',this.target).css( "visibility", "hidden" );
-				$('#lifeguard_div_available .ui-block-d',this.target).css( "visibility", "hidden" );
+			
 				////hide sfa text
 				$('#lifeguard_div_notes .ui-block-c',this.target).css( "visibility", "hidden" );	
 
@@ -214,6 +214,8 @@ lifeguard.desktop = {
 				
 				$('#lifeguard_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
 				$('#lifeguard_div_available .ui-block-c',this.target).css( "visibility", "hidden" );
+				$('#lifeguard_div_available .ui-block-e',this.target).css( "visibility", "hidden" );
+
 				////hide sfa text
 				$('#lifeguard_div_notes .ui-block-c',this.target).css( "visibility", "hidden" );				
 			} 	
