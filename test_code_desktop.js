@@ -207,7 +207,7 @@ lifeguard.desktop = {
 				////hide sfa text
 				$('#lifeguard_div_notes .ui-block-c',this.target).css( "visibility", "hidden" );				
 			} 	
-			} else if (ageIndex == 3){
+			} else if (ageIndex == 4){
 				$('#lifeguard .bronze_star',this.target).css( "visibility", "hidden" );
 				$('#lifeguard .national_lifeguard_pool',this.target).addClass("ui-state-disabled");
 				$('#lifeguard .national_lifeguard_water_park',this.target).addClass("ui-state-disabled");		
