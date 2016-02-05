@@ -286,13 +286,6 @@ p.lifeguard_body_text {
 	visibility:hidden;
 }
 
-.available_after_age1314 {
-	width:25% !important;
-	text-align: center;
-	color: #999999;
-	font-size: 14px;
-	font-family: 'Univers LT W02 55 Roman','Univers LT W02 55 Roman Standalone', 'Univers LT Std', 'Univers LT Std Standalone';
-}
 .available_after_age {
 	width:40% !important;
 	text-align: center;
@@ -301,14 +294,6 @@ p.lifeguard_body_text {
 	font-family: 'Univers LT W02 55 Roman','Univers LT W02 55 Roman Standalone', 'Univers LT Std', 'Univers LT Std Standalone';
 }
 .available_after_age p{
-	margin-left:10px;
-	margin-right:10px;
-	color: #999999;
-	border-bottom: 0.1em solid #999999;
-	font-size: 14px;
-	font-family: 'Univers LT W02 55 Roman', 'Univers LT W02 55 Roman Standalone','Univers LT Std', 'Univers LT Std Standalone';
-}
-.available_after_age1314 p{
 	margin-left:10px;
 	margin-right:10px;
 	color: #999999;
