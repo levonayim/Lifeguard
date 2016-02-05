@@ -258,11 +258,6 @@ lifeguard.desktop = {
 				$('#lifeguard_instructor_div_buttons .lifesaving_instructor',this.target).addClass("ui-state-disabled");
 				$('#lifeguard_instructor_div_sorry',this.target).css( "display", "none" );	
 			} else if (ageIndex == 3){
-				//$('#lifeguard_instructor_div_buttons .bronze_medallion').addClass("ui-btn-active");
-				//$('#lifeguard_instructor_div_buttons .bronze_cross').addClass("ui-btn-active");
-				$('#lifeguard_instructor_div_buttons .lifesaving_instructor',this.target).addClass("ui-state-disabled");
-				$('#lifeguard_instructor_div_sorry',this.target).css( "display", "none" );
-			} else if (ageIndex == 4){
 				$('#lifeguard_instructor_div_available',this.target).css( "visibility", "hidden" );
 				
 				//$('#lifeguard_instructor_div_buttons .bronze_medallion').addClass("ui-btn-active");
