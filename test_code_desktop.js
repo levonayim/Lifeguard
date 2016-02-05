@@ -157,7 +157,7 @@ lifeguard.desktop = {
 				
 				$('#lifeguard .national_lifeguard_pool',this.target).addClass("ui-state-disabled");
 				$('#lifeguard .national_lifeguard_water_park',this.target).addClass("ui-state-disabled");				
-				
+				$('#lifeguard .standard_first_aid',this.target).addClass("ui-state-disabled");
 				$('#lifeguard #lifeguard_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
 				
 				/*
