@@ -199,15 +199,24 @@ lifeguard.desktop = {
 				//$('#lifeguard .bronze_cross').addClass("ui-btn-active");
 				//$('#lifeguard .standard_first_aid').addClass("ui-btn-active");
 				
-				
-				//$('#lifeguard .national_lifeguard_pool').addClass("ui-btn-active");
-				//$('#lifeguard .national_lifeguard_water_park').addClass("ui-btn-active");			
+				$('#lifeguard .national_lifeguard_pool',this.target).addClass("ui-state-disabled");
+				$('#lifeguard .national_lifeguard_water_park',this.target).addClass("ui-state-disabled");		
 				
 				$('#lifeguard_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
 				$('#lifeguard_div_available .ui-block-c',this.target).css( "visibility", "hidden" );
 				////hide sfa text
 				$('#lifeguard_div_notes .ui-block-c',this.target).css( "visibility", "hidden" );				
 			} 	
+			} else if (ageIndex == 3){
+				$('#lifeguard .bronze_star',this.target).css( "visibility", "hidden" );
+				$('#lifeguard .national_lifeguard_pool',this.target).addClass("ui-state-disabled");
+				$('#lifeguard .national_lifeguard_water_park',this.target).addClass("ui-state-disabled");		
+				
+				$('#lifeguard_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
+				$('#lifeguard_div_available .ui-block-c',this.target).css( "visibility", "hidden" );
+				////hide sfa text
+				$('#lifeguard_div_notes .ui-block-c',this.target).css( "visibility", "hidden" );
+			}
 	},
 	processResult_lifeguard_instructor: function(ageIndex){
 			this.init_lifeguard_instructor();
