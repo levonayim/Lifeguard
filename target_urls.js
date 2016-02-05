@@ -25,5 +25,5 @@ var result_urls={
 	'fitness_theory':fitness_theory_url,
 	'instructor_aquafit':instructor_aquafit_url,
 	'emergency_first_aid':emergency_first_aid_url,
-	'cpr_c': cpr_c_url
+	'cpr_c':cpr_c_url
 } 
