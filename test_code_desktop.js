@@ -214,6 +214,7 @@ lifeguard.desktop = {
 			if (ageIndex == 0){
 				$('#lifeguard_instructor_div_available',this.target).css( "visibility", "hidden" );
 				$('#lifeguard_instructor_div_buttons',this.target).css( "display", "none" );
+				$('#lifeguard_div_available .ui-block-c',this.target).css( "visibility", "hidden" );
 				//$('#lifeguard_instructor_div_sorry a').addClass("ui-state-disabled");
 				
 				//$('#lifeguard_instructor_div_sorry').css( "visibility", "hidden" );
@@ -259,7 +260,7 @@ lifeguard.desktop = {
 				$('#lifeguard_instructor_div_sorry',this.target).css( "display", "none" );	
 			} else if (ageIndex == 3){
 				$('#lifeguard_instructor_div_available',this.target).css( "visibility", "hidden" );
-				
+				$('#lifeguard_div_available .ui-block-c',this.target).css( "visibility", "hidden" );
 				//$('#lifeguard_instructor_div_buttons .bronze_medallion').addClass("ui-btn-active");
 				//$('#lifeguard_instructor_div_buttons .bronze_cross').addClass("ui-btn-active");
 				//$('#lifeguard_instructor_div_buttons .lifesaving_instructor').addClass("ui-btn-active");
