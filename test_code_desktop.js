@@ -234,42 +234,17 @@ lifeguard.desktop = {
 				//$('#lifeguard_instructor_div_buttons .bronze_cross').addClass("ui-btn-active");
 				$('#lifeguard_instructor_div_buttons .lifesaving_instructor').addClass("ui-state-disabled");
 				$('#lifeguard_instructor_div_sorry',this.target).css( "display", "none" );
-				/*
-				$('#bronze_star').css( "visibility", "hidden" );
-				
-				$('#bronze_medallion').addClass("ui-btn-active");
-				$('#bronze_cross').addClass("ui-btn-active");
-				
-				$('#standard_first_aid').addClass("ui-state-disabled");
-				$('#national_lifeguard_pool').addClass("ui-state-disabled");
-				$('#national_lifeguard_water_park').addClass("ui-state-disabled");				
-				
-				$('#lifeguard #lifeguard_div_available .ui-block-b').css( "visibility", "hidden" );
-				
-				//////////////////////
-				
-				//first disable all buttons
-				$('#lifeguard #lifeguard_div_buttons a').addClass("ui-state-disabled");
-				
-				//enable medallion and cross
-				$('#bronze_medallion').removeClass("ui-state-disabled");
-				$('#bronze_cross').removeClass("ui-state-disabled");
-				
-				
-				$('#lifeguard #lifeguard_div_available .available_after_age').css( "visibility", "visible" );
-				$('#lifeguard #lifeguard_div_available .ui-block-b').css( "visibility", "hidden" );
-				
-				$('#bronze_star').css( "visibility", "hidden" );
-				
-				//show sfa text
-				$('#lifeguard #lifeguard_div_notes .ui-block-c').css( "visibility", "visible" );
-				*/
 			} else if (ageIndex == 2){
 				//$('#lifeguard_instructor_div_buttons .bronze_medallion').addClass("ui-btn-active");
 				//$('#lifeguard_instructor_div_buttons .bronze_cross').addClass("ui-btn-active");
 				$('#lifeguard_instructor_div_buttons .lifesaving_instructor',this.target).addClass("ui-state-disabled");
 				$('#lifeguard_instructor_div_sorry',this.target).css( "display", "none" );	
-			} else if (ageIndex == 3){
+			}else if (ageIndex == 3){
+				//$('#lifeguard_instructor_div_buttons .bronze_medallion').addClass("ui-btn-active");
+				//$('#lifeguard_instructor_div_buttons .bronze_cross').addClass("ui-btn-active");
+				$('#lifeguard_instructor_div_buttons .lifesaving_instructor',this.target).addClass("ui-state-disabled");
+				$('#lifeguard_instructor_div_sorry',this.target).css( "display", "none" );	
+			} else if (ageIndex == 4){
 				$('#lifeguard_instructor_div_available',this.target).css( "visibility", "hidden" );
 				$('#lifeguard_instructor_div_available .available_after_age_general',this.target).css( "visibility", "hidden" );
 				//$('#lifeguard_instructor_div_buttons .bronze_medallion').addClass("ui-btn-active");
