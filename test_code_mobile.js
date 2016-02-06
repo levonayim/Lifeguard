@@ -189,9 +189,12 @@ lifeguard.mobile = {
 			if (ageIndex == 0){
 				$('#red_cross_swimming_instructor_div_buttons',this.target).css( "display", "none" );
 			} else if (ageIndex == 1){
-				$('#red_cross_swimming_instructor_div_buttons',this.target).css( "display", "none" );
+				$('#red_cross_swimming_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#red_cross_swimming_instructor_div_buttons .emergency_first_aid',this.target).css( "visibility", "hidden" );
+				$('#red_cross_swimming_instructor_div_buttons .assistant_water_safety_instructor',this.target).css( "visibility", "hidden" );
 			} else if (ageIndex == 2){
-				$('#red_cross_swimming_instructor_div_buttons',this.target).css( "display", "none" );
+				$('#red_cross_swimming_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#red_cross_swimming_instructor_div_buttons .assistant_water_safety_instructor',this.target).css( "visibility", "hidden" );
 			} else if (ageIndex == 3){
 				$('#red_cross_swimming_instructor_div_sorry',this.target).css( "display", "none" );
 			} else if (ageIndex == 4){
