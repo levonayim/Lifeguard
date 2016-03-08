@@ -157,7 +157,7 @@ lifeguard.desktop = {
 				
 				$('#lifeguard .national_lifeguard_pool',this.target).addClass("ui-state-disabled");
 				$('#lifeguard .national_lifeguard_water_park',this.target).addClass("ui-state-disabled");				
-				
+				$('#lifeguard .standard_first_aid',this.target).addClass("ui-state-disabled");
 				$('#lifeguard #lifeguard_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
 				
 				/*
@@ -188,6 +188,7 @@ lifeguard.desktop = {
 				$('#lifeguard .national_lifeguard_water_park',this.target).addClass("ui-state-disabled");				
 				
 				$('#lifeguard_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
+				$('#lifeguard_div_available .ui-block-c',this.target).css( "visibility", "hidden" );
 				
 				////hide sfa text
 				$('#lifeguard_div_notes .ui-block-c',this.target).css( "visibility", "hidden" );
@@ -199,12 +200,22 @@ lifeguard.desktop = {
 				//$('#lifeguard .bronze_cross').addClass("ui-btn-active");
 				//$('#lifeguard .standard_first_aid').addClass("ui-btn-active");
 				
-				
-				//$('#lifeguard .national_lifeguard_pool').addClass("ui-btn-active");
-				//$('#lifeguard .national_lifeguard_water_park').addClass("ui-btn-active");			
+				$('#lifeguard .national_lifeguard_pool',this.target).addClass("ui-state-disabled");
+				$('#lifeguard .national_lifeguard_water_park',this.target).addClass("ui-state-disabled");		
 				
 				$('#lifeguard_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
 				$('#lifeguard_div_available .ui-block-c',this.target).css( "visibility", "hidden" );
+			
+				////hide sfa text
+				$('#lifeguard_div_notes .ui-block-c',this.target).css( "visibility", "hidden" );	
+
+			} else if (ageIndex == 4){
+				$('#lifeguard .bronze_star',this.target).css( "visibility", "hidden" );		
+				
+				$('#lifeguard_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
+				$('#lifeguard_div_available .ui-block-c',this.target).css( "visibility", "hidden" );
+				$('#lifeguard_div_available .ui-block-e',this.target).css( "visibility", "hidden" );
+
 				////hide sfa text
 				$('#lifeguard_div_notes .ui-block-c',this.target).css( "visibility", "hidden" );				
 			} 	
@@ -223,42 +234,17 @@ lifeguard.desktop = {
 				//$('#lifeguard_instructor_div_buttons .bronze_cross').addClass("ui-btn-active");
 				$('#lifeguard_instructor_div_buttons .lifesaving_instructor').addClass("ui-state-disabled");
 				$('#lifeguard_instructor_div_sorry',this.target).css( "display", "none" );
-				/*
-				$('#bronze_star').css( "visibility", "hidden" );
-				
-				$('#bronze_medallion').addClass("ui-btn-active");
-				$('#bronze_cross').addClass("ui-btn-active");
-				
-				$('#standard_first_aid').addClass("ui-state-disabled");
-				$('#national_lifeguard_pool').addClass("ui-state-disabled");
-				$('#national_lifeguard_water_park').addClass("ui-state-disabled");				
-				
-				$('#lifeguard #lifeguard_div_available .ui-block-b').css( "visibility", "hidden" );
-				
-				//////////////////////
-				
-				//first disable all buttons
-				$('#lifeguard #lifeguard_div_buttons a').addClass("ui-state-disabled");
-				
-				//enable medallion and cross
-				$('#bronze_medallion').removeClass("ui-state-disabled");
-				$('#bronze_cross').removeClass("ui-state-disabled");
-				
-				
-				$('#lifeguard #lifeguard_div_available .available_after_age').css( "visibility", "visible" );
-				$('#lifeguard #lifeguard_div_available .ui-block-b').css( "visibility", "hidden" );
-				
-				$('#bronze_star').css( "visibility", "hidden" );
-				
-				//show sfa text
-				$('#lifeguard #lifeguard_div_notes .ui-block-c').css( "visibility", "visible" );
-				*/
 			} else if (ageIndex == 2){
 				//$('#lifeguard_instructor_div_buttons .bronze_medallion').addClass("ui-btn-active");
 				//$('#lifeguard_instructor_div_buttons .bronze_cross').addClass("ui-btn-active");
 				$('#lifeguard_instructor_div_buttons .lifesaving_instructor',this.target).addClass("ui-state-disabled");
 				$('#lifeguard_instructor_div_sorry',this.target).css( "display", "none" );	
-			} else if (ageIndex == 3){
+			}else if (ageIndex == 3){
+				//$('#lifeguard_instructor_div_buttons .bronze_medallion').addClass("ui-btn-active");
+				//$('#lifeguard_instructor_div_buttons .bronze_cross').addClass("ui-btn-active");
+				$('#lifeguard_instructor_div_buttons .lifesaving_instructor',this.target).addClass("ui-state-disabled");
+				$('#lifeguard_instructor_div_sorry',this.target).css( "display", "none" );	
+			} else if (ageIndex == 4){
 				$('#lifeguard_instructor_div_available',this.target).css( "visibility", "hidden" );
 				$('#lifeguard_instructor_div_available .available_after_age_general',this.target).css( "visibility", "hidden" );
 				//$('#lifeguard_instructor_div_buttons .bronze_medallion').addClass("ui-btn-active");
@@ -273,10 +259,14 @@ lifeguard.desktop = {
 				$('#red_cross_swimming_instructor_div_buttons',this.target).css( "display", "none" );
 				$('#red_cross_swimming_instructor_div_notes',this.target).css( "visibility", "hidden" );
 			} else if (ageIndex == 1){
-				$('#red_cross_swimming_instructor_div_buttons',this.target).css( "display", "none" );
+				$('#red_cross_swimming_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#red_cross_swimming_instructor_div_buttons .emergency_first_aid',this.target).css( "visibility", "hidden" );
+				$('#red_cross_swimming_instructor_div_buttons .assistant_water_safety_instructor',this.target).css( "visibility", "hidden" );
 				$('#red_cross_swimming_instructor_div_notes',this.target).css( "visibility", "hidden" );
+
 			} else if (ageIndex == 2){
-				$('#red_cross_swimming_instructor_div_buttons',this.target).css( "display", "none" );
+				$('#red_cross_swimming_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#red_cross_swimming_instructor_div_buttons .assistant_water_safety_instructor',this.target).css( "visibility", "hidden" );
 				$('#red_cross_swimming_instructor_div_notes',this.target).css( "visibility", "hidden" );
 			} else if (ageIndex == 3){
 				$('#red_cross_swimming_instructor_div_sorry',this.target).css( "display", "none" );
@@ -297,13 +287,20 @@ lifeguard.desktop = {
 				$('#bcrpa_aquafit_instructor_div_buttons',this.target).css( "display", "none" );
 				$('#bcrpa_aquafit_instructor_div_notes',this.target).css( "visibility", "hidden" );
 			} else if (ageIndex == 2){
-				$('#bcrpa_aquafit_instructor_div_buttons',this.target).css( "display", "none" );
+				$('#bcrpa_aquafit_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory').css( "visibility", "hidden" );
+				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit').css( "visibility", "hidden" );
 				$('#bcrpa_aquafit_instructor_div_notes',this.target).css( "visibility", "hidden" );
 			} else if (ageIndex == 3){
 				$('#bcrpa_aquafit_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory').css( "visibility", "hidden" );
+				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit').css( "visibility", "hidden" );
+				$('#bcrpa_aquafit_instructor_div_notes',this.target).css( "visibility", "hidden" );
+			}else if (ageIndex == 4){
+				$('#bcrpa_aquafit_instructor_div_sorry',this.target).css( "display", "none" );
 				//$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory').addClass("ui-btn-active");
 				//$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit').addClass("ui-btn-active");
-			} 	
+			} 	 	
 	},
 	showResultClasses: function(categoryIndex,ageIndex){
 		console.log( "showResultClasses...ageIndex:"+ ageIndex);

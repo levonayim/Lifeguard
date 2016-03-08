@@ -189,9 +189,13 @@ lifeguard.mobile = {
 			if (ageIndex == 0){
 				$('#red_cross_swimming_instructor_div_buttons',this.target).css( "display", "none" );
 			} else if (ageIndex == 1){
-				$('#red_cross_swimming_instructor_div_buttons',this.target).css( "display", "none" );
+				$('#red_cross_swimming_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#red_cross_swimming_instructor_div_buttons .emergency_first_aid',this.target).css( "display", "none");
+				$('#red_cross_swimming_instructor_div_buttons .water_safety_instructor',this.target).css( "display", "none" );
+				$('#red_cross_swimming_instructor_div_buttons .water_safety_instructor',this.target).css( "visibility", "hidden" );
 			} else if (ageIndex == 2){
-				$('#red_cross_swimming_instructor_div_buttons',this.target).css( "display", "none" );
+				$('#red_cross_swimming_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#red_cross_swimming_instructor_div_buttons .water_safety_instructor',this.target).css( "display", "none" );
 			} else if (ageIndex == 3){
 				$('#red_cross_swimming_instructor_div_sorry',this.target).css( "display", "none" );
 			} else if (ageIndex == 4){
@@ -205,9 +209,13 @@ lifeguard.mobile = {
 			} else if (ageIndex == 1){
 				$('#bcrpa_aquafit_instructor_div_buttons',this.target).css( "display", "none" );
 			} else if (ageIndex == 2){
-				$('#bcrpa_aquafit_instructor_div_buttons',this.target).css( "display", "none" );
+				$('#bcrpa_aquafit_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory',this.target).css( "display", "none" );
+				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit',this.target).css( "display", "none" );
 			} else if (ageIndex == 3){
-				$('#bcrpa_aquafit_instructor_div_buttons',this.target).css( "display", "none" );
+				$('#bcrpa_aquafit_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory',this.target).css( "display", "none" );
+				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit',this.target).css( "display", "none" );
 			} else if (ageIndex == 4){
 				$('#bcrpa_aquafit_instructor_div_sorry',this.target).css( "display", "none" );
 			} 	
