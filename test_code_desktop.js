@@ -352,16 +352,16 @@ lifeguard.desktop = {
 			this.init_pool_operator();
 			if (ageIndex == 0){
 				$('#pool_operator_div_buttons .pool_operator_1').addClass("ui-state-disabled");
-				$('#pool_operator_div_buttons .pool_operator_2').addClass("ui-state-disabled");
+				// $('#pool_operator_div_buttons .pool_operator_2').addClass("ui-state-disabled");
 			} else if (ageIndex == 1){
 				$('#pool_operator_div_buttons .pool_operator_1').addClass("ui-state-disabled");
-				$('#pool_operator_div_buttons .pool_operator_2').addClass("ui-state-disabled");
+				// $('#pool_operator_div_buttons .pool_operator_2').addClass("ui-state-disabled");
 			} else if (ageIndex == 2){
 				$('#pool_operator_div_buttons .pool_operator_1').addClass("ui-state-disabled");
-				$('#pool_operator_div_buttons .pool_operator_2').addClass("ui-state-disabled");
+				// $('#pool_operator_div_buttons .pool_operator_2').addClass("ui-state-disabled");
 			} else if (ageIndex == 3){
 				$('#pool_operator_div_buttons .pool_operator_1').addClass("ui-state-disabled");
-				$('#pool_operator_div_buttons .pool_operator_2').addClass("ui-state-disabled");
+				// $('#pool_operator_div_buttons .pool_operator_2').addClass("ui-state-disabled");
 
 			}else if (ageIndex == 4){
 				$('#pool_operator_div_available .ui-block-e',this.target).css( "visibility", "hidden" );

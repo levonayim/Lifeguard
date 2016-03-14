@@ -9,7 +9,7 @@ var national_lifeguard_recertification_url='https://webreg.surrey.ca/webreg/Acti
 var national_lifeguard_water_park_url='https://webreg.surrey.ca/webreg/Activities/ActivitiesDetails.asp?aid=11178 ';
 var national_lifeguard_water_park_recertification_url='https://webreg.surrey.ca/webreg/Activities/ActivitiesDetails.asp?aid=57396';
 var lifesaving_instructor_url='https://webreg.surrey.ca/webreg/Activities/ActivitiesDetails.asp?aid=804 ';
-var lifesaving_instructor_recertification_url='';
+var lifesaving_instructor_recertification_url='https://webreg.surrey.ca/webreg/Activities/ActivitiesDetails.asp?aid=4121 ';
 var water_safety_instructor1_url='https://webreg.surrey.ca/webreg/Activities/ActivitiesDetails.asp?aid=123145';
 var water_safety_instructor2_url='https://webreg.surrey.ca/webreg/Activities/ActivitiesDetails.asp?aid=123146';
 var water_safety_instructor_recertification_url='https://webreg.surrey.ca/webreg/Activities/ActivitiesDetails.asp?aid=4122';
@@ -20,8 +20,8 @@ var emergency_first_aid_recertification_url='https://webreg.surrey.ca/webreg/Act
 var emergency_child_care_first_aid_url='https://webreg.surrey.ca/webreg/Activities/ActivitiesDetails.asp?aid=123176 ';
 var cpr_c_url='https://webreg.surrey.ca/webreg/Activities/ActivitiesDetails.asp?aid=724';
 var cpr_and_aed_recertification_url='https://webreg.surrey.ca/webreg/Activities/ActivitiesDetails.asp?aid=1737';
-var swim_kids_10_url='';
-var pool_operator_1_url='';
+var swim_kids_10_url='https://webreg.surrey.ca/webreg/Activities/ActivitiesDetails.asp?aid=74416';
+var pool_operator_1_url='https://webreg.surrey.ca/webreg/Activities/ActivitiesDetails.asp?aid=13624';
 var pool_operator_2_url='';
 
 var result_urls={
