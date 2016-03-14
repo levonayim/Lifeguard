@@ -470,3 +470,8 @@ p.afterstep {
 h3.stepsGeneral{
 	
 }
+
+.ui-block-a>p{
+	text-align: left;
+	font-size: 14px;
+}
