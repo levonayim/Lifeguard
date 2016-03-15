@@ -25,7 +25,7 @@
   body:before{ content: ""; background:none; /* Semi-transparent yellow */ position: absolute; top: 0; left: 0; right: 0; z-index: 99; } 
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:769px) {
   body:after {
     content: "bp-medium";
     display: none;
