@@ -255,8 +255,8 @@ lifeguard.desktop = {
 				$('#lifesaving_instructor_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
 
 			} else if (ageIndex == 4){
-				$('#lifesaving_instructor_div_available',this.target).css( "visibility", "hidden" );
-				$('#lifesaving_instructor_div_available .available_after_age_general',this.target).css( "visibility", "hidden" );
+				// $('#lifesaving_instructor_div_available',this.target).css( "visibility", "hidden" );
+				// $('#lifesaving_instructor_div_available .available_after_age_general',this.target).css( "visibility", "hidden" );
 				$('#lifesaving_instructor_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
 				$('#lifesaving_instructor_div_available .ui-block-e',this.target).css( "visibility", "hidden" );
 			} 	

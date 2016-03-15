@@ -175,20 +175,38 @@ lifeguard.mobile = {
 	processResult_lifesaving_instructor: function(ageIndex){
 			this.init_lifesaving_instructor();
 			if (ageIndex == 0){
-				$('#lifesaving_instructor_div_buttons',this.target).css( "display", "none" );
-				//we leave only sorry to be displayed
+				$('#lifesaving_instructor .bronze_medallion',this.target).addClass("ui-state-disabled");
+				$('#lifesaving_instructor .bronze_cross',this.target).addClass("ui-state-disabled");
+				$('#lifesaving_instructor .bronze_medallion_cross_combination',this.target).addClass("ui-state-disabled");
+				$('#lifesaving_instructor .water_safety_instructor1',this.target).addClass("ui-state-disabled");
+				$('#lifesaving_instructor .water_safety_instructor2',this.target).addClass("ui-state-disabled");
+				$('#lifesaving_instructor_div_buttons .lifesaving_instructor',this.target).addClass("ui-state-disabled");
+				$('#lifesaving_instructor_div_buttons .lifesaving_instructor_recertification',this.target).addClass("ui-state-disabled");
 			} else if (ageIndex == 1){
+				$('#lifesaving_instructor .water_safety_instructor1',this.target).addClass("ui-state-disabled");
+				$('#lifesaving_instructor .water_safety_instructor2',this.target).addClass("ui-state-disabled");
 				$('#lifesaving_instructor_div_buttons .lifesaving_instructor',this.target).addClass("ui-state-disabled");
-				$('#lifesaving_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#lifesaving_instructor_div_buttons .lifesaving_instructor_recertification',this.target).addClass("ui-state-disabled");
+
+				$('#lifesaving_instructor #available_after_age_13',this.target).css( "display", "none" );
+
 			} else if (ageIndex == 2){
+				$('#lifesaving_instructor .water_safety_instructor1',this.target).addClass("ui-state-disabled");
+				$('#lifesaving_instructor .water_safety_instructor2',this.target).addClass("ui-state-disabled");
 				$('#lifesaving_instructor_div_buttons .lifesaving_instructor',this.target).addClass("ui-state-disabled");
-				$('#lifesaving_instructor_div_sorry',this.target).css( "display", "none" );	
+				$('#lifesaving_instructor_div_buttons .lifesaving_instructor_recertification',this.target).addClass("ui-state-disabled");
+
+				$('#lifesaving_instructor #available_after_age_13',this.target).css( "display", "none" );
+
 			} else if (ageIndex == 3){
 				$('#lifesaving_instructor_div_buttons .lifesaving_instructor',this.target).addClass("ui-state-disabled");
-				$('#lifesaving_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#lifesaving_instructor_div_buttons .lifesaving_instructor_recertification',this.target).addClass("ui-state-disabled");
+
+				$('#lifesaving_instructor #available_after_age_13',this.target).css( "display", "none" );
+
 			} else if (ageIndex == 4){
-				$('#lifesaving_instructor_div_buttons .available_after_age_general',this.target).css( "display", "none" );
-				$('#lifesaving_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#lifesaving_instructor #available_after_age_13',this.target).css( "display", "none" );
+				$('#lifesaving_instructor #available_after_age_16',this.target).css( "display", "none" );
 			} 	
 	},
 	processResult_red_cross_swimming_instructor: function(ageIndex){
