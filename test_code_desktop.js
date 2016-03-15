@@ -280,11 +280,9 @@ lifeguard.desktop = {
 				$('#red_cross_swimming_instructor .standard_first_aid',this.target).addClass("ui-state-disabled");
 				$('#red_cross_swimming_instructor .water_safety_instructor1',this.target).addClass("ui-state-disabled");
 				$('#red_cross_swimming_instructor .water_safety_instructor2',this.target).addClass("ui-state-disabled");
+				$('#red_cross_swimming_instructor .water_safety_instructor_recertification',this.target).addClass("ui-state-disabled");
 
 				$('#red_cross_swimming_instructor_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
-
-				$('#red_cross_swimming_instructor .water_safety_instructor_recertification',this.target).addClass("ui-state-disabled");
-				$('#red_cross_swimming_instructor_div_notes',this.target).css( "visibility", "hidden" );
 
 			} else if (ageIndex == 2){
 				$('#red_cross_swimming_instructor .water_safety_instructor1',this.target).addClass("ui-state-disabled");
@@ -293,8 +291,6 @@ lifeguard.desktop = {
 
 				$('#red_cross_swimming_instructor_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
 				$('#red_cross_swimming_instructor_div_available .ui-block-c',this.target).css( "visibility", "hidden" );
-
-				$('#red_cross_swimming_instructor_div_notes',this.target).css( "visibility", "hidden" );
 			} else if (ageIndex == 3){
 				$('#red_cross_swimming_instructor_div_available .ui-block-b',this.target).css( "visibility", "hidden" );
 				$('#red_cross_swimming_instructor_div_available .ui-block-c',this.target).css( "visibility", "hidden" );
