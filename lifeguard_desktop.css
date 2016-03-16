@@ -336,16 +336,44 @@ p.lifeguard_body_text {
 	width:25% !important;
 }
 
-.sorry  div.ui-block-a{
-	width:25% !important;
-}
-.sorry  div.ui-block-b{
-	width:50% !important;
-}
-.sorry  div.ui-block-c{
-	width:25% !important;
+#lifeguard_div_buttons{
+	padding-top:0;
 }
 
+#lifeguard_div_available{
+	padding-top:0;
+}
+
+#lifesaving_instructor_div_buttons{
+	padding-top:0;
+}
+
+#lifesaving_instructor_div_available{
+	padding-top:0;
+}
+
+#lifeguard_div_buttons{
+	padding-top:0;
+}
+
+#lifeguard_div_available{
+	padding-top:0;
+}
+@media only screen and (min-width:1025px){
+	.ui-block-a>p{
+		text-align: left;
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width:1024px) {
+	.available_after_age p{
+		font-size: 11px;
+	}
+	.ui-block-a > p,.ui-block-b > p,.ui-block-c > p,.ui-block-d > p,.ui-block-e > p,.ui-block-f > p{
+		font-size:11px;
+	}
+}
 
 .vertical-align {
 	text-align: center;
@@ -470,3 +498,4 @@ p.afterstep {
 h3.stepsGeneral{
 	
 }
+
