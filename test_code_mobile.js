@@ -99,8 +99,8 @@ lifeguard.mobile = {
 
 		//make both Available after the age visible
 		$('#lifesaving_instructor_div_available #available_after_age13',this.target).css( "visibility", "visible" );
+		$('#lifesaving_instructor_div_available #available_after_age14',this.target).css( "visibility", "visible" );
 		$('#lifesaving_instructor_div_available #available_after_age15',this.target).css( "visibility", "visible" );
-		$('#lifesaving_instructor_div_available #available_after_age16',this.target).css( "visibility", "visible" );
 	},
 	init_bcrpa_aquafit_instructor: function(){
 		$('#bcrpa_aquafit_instructor_div_buttons',this.target).css('display', '');
