@@ -326,7 +326,7 @@ lifeguard.mobile = {
 			$('#pool_operator #available_after_age_16',this.target).css( "display", "none" );
 		} 	
 	},
-	processResult_pool_operator: function(ageIndex){
+	processResult_first_aid: function(ageIndex){
 		this.init_first_aid();
 		if (ageIndex == 0){
 			$('#first_aid .pool_operator_1',this.target).addClass("ui-state-disabled");
