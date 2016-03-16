@@ -96,6 +96,11 @@ lifeguard.mobile = {
 		$('#red_cross_swimming_instructor_div_buttons a',this.target).css( "visibility", "visible" );
 		//make both Available after the age visible
 		$('#red_cross_swimming_instructor_div_available .available_after_age',this.target).css( "visibility", "visible" );
+
+		//make both Available after the age visible
+		$('#lifesaving_instructor_div_available #available_after_age13',this.target).css( "visibility", "visible" );
+		$('#lifesaving_instructor_div_available #available_after_age15',this.target).css( "visibility", "visible" );
+		$('#lifesaving_instructor_div_available #available_after_age16',this.target).css( "visibility", "visible" );
 	},
 	init_bcrpa_aquafit_instructor: function(){
 		$('#bcrpa_aquafit_instructor_div_buttons',this.target).css('display', '');
@@ -214,7 +219,7 @@ lifeguard.mobile = {
 	processResult_red_cross_swimming_instructor: function(ageIndex){
 			this.init_red_cross_swimming_instructor();
 			if (ageIndex == 0){
-				$('#red_cross_swimming_instructor_div_buttons',this.target).css( "display", "none" );
+				
 			} else if (ageIndex == 1){
 				$('#red_cross_swimming_instructor_div_sorry',this.target).css( "display", "none" );
 				$('#red_cross_swimming_instructor_div_buttons .emergency_first_aid',this.target).css( "display", "none");
