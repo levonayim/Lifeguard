@@ -248,12 +248,16 @@ lifeguard.mobile = {
 			} else if (ageIndex == 2){
 				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory',this.target).addClass("ui-state-disabled");
 				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor #available_after_age_14',this.target).css( "display", "none" );
 
 			} else if (ageIndex == 3){
 				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory',this.target).addClass("ui-state-disabled");
 				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor #available_after_age_14',this.target).css( "display", "none" );
+
 			} else if (ageIndex == 4){
-				$('#bcrpa_aquafit_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#bcrpa_aquafit_instructor #available_after_age_14',this.target).css( "display", "none" );
+				$('#bcrpa_aquafit_instructor #available_after_age_16',this.target).css( "display", "none" );
 			} 	
 	},
 	showResultClasses: function(categoryIndex,ageIndex){
