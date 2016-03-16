@@ -44,6 +44,18 @@ lifeguard.mobile = {
 					$('#bcrpa_aquafit_instructor',this.target).css( "visibility", "visible" );
 					$('#bcrpa_aquafit_instructor',this.target).css( "opacity", "1" );
 				}, 0);			
+		}else if (index == 4) {
+			$("#pool_operator",this.target).css('display', '');
+				setTimeout(function(){
+					$('#pool_operator',this.target).css( "visibility", "visible" );
+					$('#pool_operator',this.target).css( "opacity", "1" );
+				}, 0);			
+		}else if (index == 5) {
+			$("#first_aid",this.target).css('display', '');
+				setTimeout(function(){
+					$('#first_aid',this.target).css( "visibility", "visible" );
+					$('#first_aid',this.target).css( "opacity", "1" );
+				}, 0);			
 		}
 	
 	},
@@ -108,8 +120,12 @@ lifeguard.mobile = {
 		//first enable all buttons and make all visible
 		$('#bcrpa_aquafit_instructor_div_buttons a',this.target).removeClass("ui-state-disabled");
 		$('#bcrpa_aquafit_instructor_div_buttons a',this.target).css( "visibility", "visible" );
-
+		//make both Available after the age visible
 		$('#bcrpa_aquafit_instructor_div_available .available_after_age',this.target).css( "visibility", "visible" );
+
+		//make both Available after the age visible
+		$('#bcrpa_aquafit_instructor_div_available #available_after_age14',this.target).css( "visibility", "visible" );
+		$('#bcrpa_aquafit_instructor_div_available #available_after_age16',this.target).css( "visibility", "visible" );
 	},
 	init_pool_operator: function(){
 		$('#pool_operator_div_buttons',this.target).css('display', '');
@@ -117,8 +133,11 @@ lifeguard.mobile = {
 		//first enable all buttons and make all visible
 		$('#pool_operator_div_buttons a',this.target).removeClass("ui-state-disabled");
 		$('#pool_operator_div_buttons a',this.target).css( "visibility", "visible" );
-
+		//make both Available after the age visible
 		$('#pool_operator_div_available .available_after_age',this.target).css( "visibility", "visible" );
+
+		//make both Available after the age visible
+		$('#pool_operator_div_available #available_after_age16',this.target).css( "visibility", "visible" );
 	},
 
 	init_first_aid: function(){
@@ -128,10 +147,11 @@ lifeguard.mobile = {
 		//first enable all buttons and make all visible
 		$('#first_aid_div_buttons a',this.target).removeClass("ui-state-disabled");
 		$('#first_aid_div_buttons a',this.target).css( "visibility", "visible" );
-
-		$('#first_aid_div_available .available_after_age',this.target).css( "visibility", "visible" );
-		
 		//make both Available after the age visible
+		$('#first_aid_div_available .available_after_age',this.target).css( "visibility", "visible" );
+
+		//make both Available after the age visible
+		$('#first_aid_div_available #available_after_age14',this.target).css( "visibility", "visible" );
 	},
 	processResult_lifeguard: function(ageIndex){
 		this.init_lifeguard();
@@ -259,33 +279,82 @@ lifeguard.mobile = {
 	processResult_bcrpa_aquafit_instructor: function(ageIndex){
 			this.init_bcrpa_aquafit_instructor();
 			if (ageIndex == 0){
-				$('#bcrpa_aquafit_instructor_div_buttons .cpr_c',this.target).addClass("ui-state-disabled");
-				$('#bcrpa_aquafit_instructor_div_buttons .emergency_first_aid',this.target).addClass("ui-state-disabled");
-				$('#bcrpa_aquafit_instructor_div_buttons .standard_first_aid',this.target).addClass("ui-state-disabled");
-				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory',this.target).addClass("ui-state-disabled");
-				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit',this.target).addClass("ui-state-disabled");
-
+				$('#bcrpa_aquafit_instructor .emergency_first_aid',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor .standard_first_aid',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor .cpr_c',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor .fitness_theory',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor .instructor_aquafit',this.target).addClass("ui-state-disabled");
+				
 			} else if (ageIndex == 1){
-				$('#bcrpa_aquafit_instructor_div_buttons .cpr_c',this.target).addClass("ui-state-disabled");
-				$('#bcrpa_aquafit_instructor_div_buttons .emergency_first_aid',this.target).addClass("ui-state-disabled");
-				$('#bcrpa_aquafit_instructor_div_buttons .standard_first_aid',this.target).addClass("ui-state-disabled");
-				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory',this.target).addClass("ui-state-disabled");
-				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor .emergency_first_aid',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor .standard_first_aid',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor .cpr_c',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor .fitness_theory',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor .instructor_aquafit',this.target).addClass("ui-state-disabled");
 
 			} else if (ageIndex == 2){
-				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory',this.target).addClass("ui-state-disabled");
-				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor .fitness_theory',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor .instructor_aquafit',this.target).addClass("ui-state-disabled");
+
 				$('#bcrpa_aquafit_instructor #available_after_age_14',this.target).css( "display", "none" );
 
 			} else if (ageIndex == 3){
-				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory',this.target).addClass("ui-state-disabled");
-				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor .fitness_theory',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor .instructor_aquafit',this.target).addClass("ui-state-disabled");
 				$('#bcrpa_aquafit_instructor #available_after_age_14',this.target).css( "display", "none" );
 
 			} else if (ageIndex == 4){
 				$('#bcrpa_aquafit_instructor #available_after_age_14',this.target).css( "display", "none" );
 				$('#bcrpa_aquafit_instructor #available_after_age_16',this.target).css( "display", "none" );
 			} 	
+	},
+	processResult_pool_operator: function(ageIndex){
+		this.init_pool_operator();
+		if (ageIndex == 0){
+			$('#pool_operator .pool_operator_1',this.target).addClass("ui-state-disabled");
+			
+		} else if (ageIndex == 1){
+			$('#pool_operator .pool_operator_1',this.target).addClass("ui-state-disabled");
+
+		} else if (ageIndex == 2){
+			$('#pool_operator .pool_operator_1',this.target).addClass("ui-state-disabled");
+
+		} else if (ageIndex == 3){
+			$('#pool_operator .pool_operator_1',this.target).addClass("ui-state-disabled");
+
+		} else if (ageIndex == 4){
+			$('#pool_operator #available_after_age_16',this.target).css( "display", "none" );
+		} 	
+	},
+	processResult_first_aid: function(ageIndex){
+		this.init_first_aid();
+		if (ageIndex == 0){
+			$('#first_aid .emergency_first_aid',this.target).addClass("ui-state-disabled");
+			$('#first_aid .emergency_first_aid_recertification',this.target).addClass("ui-state-disabled");
+			$('#first_aid .emergency_child_care_first_aid',this.target).addClass("ui-state-disabled");
+			$('#first_aid .standard_first_aid',this.target).addClass("ui-state-disabled");
+			$('#first_aid .standard_first_aid_recertification',this.target).addClass("ui-state-disabled");
+			$('#first_aid .cpr_c',this.target).addClass("ui-state-disabled");
+			$('#first_aid .cpr_and_aed_recertification',this.target).addClass("ui-state-disabled");
+			
+		} else if (ageIndex == 1){
+			$('#first_aid .emergency_first_aid',this.target).addClass("ui-state-disabled");
+			$('#first_aid .emergency_first_aid_recertification',this.target).addClass("ui-state-disabled");
+			$('#first_aid .emergency_child_care_first_aid',this.target).addClass("ui-state-disabled");
+			$('#first_aid .standard_first_aid',this.target).addClass("ui-state-disabled");
+			$('#first_aid .standard_first_aid_recertification',this.target).addClass("ui-state-disabled");
+			$('#first_aid .cpr_c',this.target).addClass("ui-state-disabled");
+			$('#first_aid .cpr_and_aed_recertification',this.target).addClass("ui-state-disabled");
+
+		} else if (ageIndex == 2){
+			$('#first_aid #available_after_age_14',this.target).css( "display", "none" );
+
+		} else if (ageIndex == 3){
+			$('#first_aid #available_after_age_14',this.target).css( "display", "none" );
+
+		} else if (ageIndex == 4){
+			$('#first_aid #available_after_age_14',this.target).css( "display", "none" );
+		} 	
 	},
 	showResultClasses: function(categoryIndex,ageIndex){
 		console.log( "showResultClasses...ageIndex:"+ ageIndex);
@@ -297,6 +366,10 @@ lifeguard.mobile = {
 			this.processResult_red_cross_swimming_instructor(ageIndex);
 		}else if (categoryIndex==3){
 			this.processResult_bcrpa_aquafit_instructor(ageIndex);
+		}else if (categoryIndex==4){
+			this.processResult_pool_operator(ageIndex);
+		}else if (categoryIndex==5){
+			this.processResult_first_aid(ageIndex);
 		}
 	},
 	
