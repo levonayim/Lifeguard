@@ -329,10 +329,22 @@ lifeguard.mobile = {
 	processResult_first_aid: function(ageIndex){
 		this.init_first_aid();
 		if (ageIndex == 0){
-			$('#first_aid .pool_operator_1',this.target).addClass("ui-state-disabled");
+			$('#first_aid .emergency_first_aid',this.target).addClass("ui-state-disabled");
+			$('#first_aid .emergency_first_aid_recertification',this.target).addClass("ui-state-disabled");
+			$('#first_aid .emergency_child_care_first_aid',this.target).addClass("ui-state-disabled");
+			$('#first_aid .standard_first_aid',this.target).addClass("ui-state-disabled");
+			$('#first_aid .standard_first_aid_recertification',this.target).addClass("ui-state-disabled");
+			$('#first_aid .cpr_c',this.target).addClass("ui-state-disabled");
+			$('#first_aid .cpr_and_aed_recertification',this.target).addClass("ui-state-disabled");
 			
 		} else if (ageIndex == 1){
-			$('#first_aid .pool_operator_1',this.target).addClass("ui-state-disabled");
+			$('#first_aid .emergency_first_aid',this.target).addClass("ui-state-disabled");
+			$('#first_aid .emergency_first_aid_recertification',this.target).addClass("ui-state-disabled");
+			$('#first_aid .emergency_child_care_first_aid',this.target).addClass("ui-state-disabled");
+			$('#first_aid .standard_first_aid',this.target).addClass("ui-state-disabled");
+			$('#first_aid .standard_first_aid_recertification',this.target).addClass("ui-state-disabled");
+			$('#first_aid .cpr_c',this.target).addClass("ui-state-disabled");
+			$('#first_aid .cpr_and_aed_recertification',this.target).addClass("ui-state-disabled");
 
 		} else if (ageIndex == 2){
 			$('#first_aid #available_after_age_14',this.target).css( "display", "none" );
