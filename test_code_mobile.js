@@ -145,9 +145,7 @@ lifeguard.mobile = {
 		$('#first_aid_div_available .available_after_age',this.target).css( "visibility", "visible" );
 
 		//make both Available after the age visible
-		$('#first_aid_div_available #available_after_age13',this.target).css( "visibility", "visible" );
 		$('#first_aid_div_available #available_after_age14',this.target).css( "visibility", "visible" );
-		$('#first_aid_div_available #available_after_age15',this.target).css( "visibility", "visible" );
 	},
 	processResult_lifeguard: function(ageIndex){
 		this.init_lifeguard();
@@ -322,6 +320,24 @@ lifeguard.mobile = {
 			$('#pool_operator #available_after_age_16',this.target).css( "display", "none" );
 		} 	
 	},
+	processResult_pool_operator: function(ageIndex){
+		this.init_first_aid();
+		if (ageIndex == 0){
+			$('#first_aid .pool_operator_1',this.target).addClass("ui-state-disabled");
+			
+		} else if (ageIndex == 1){
+			$('#first_aid .pool_operator_1',this.target).addClass("ui-state-disabled");
+
+		} else if (ageIndex == 2){
+			$('#first_aid #available_after_age_14',this.target).css( "display", "none" );
+
+		} else if (ageIndex == 3){
+			$('#first_aid #available_after_age_14',this.target).css( "display", "none" );
+
+		} else if (ageIndex == 4){
+			$('#first_aid #available_after_age_14',this.target).css( "display", "none" );
+		} 	
+	},
 	showResultClasses: function(categoryIndex,ageIndex){
 		console.log( "showResultClasses...ageIndex:"+ ageIndex);
 		if (categoryIndex==0){
@@ -334,6 +350,8 @@ lifeguard.mobile = {
 			this.processResult_bcrpa_aquafit_instructor(ageIndex);
 		}else if (categoryIndex==4){
 			this.processResult_pool_operator(ageIndex);
+		}else if (categoryIndex==5){
+			this.processResult_first_aid(ageIndex);
 		}
 	},
 	
