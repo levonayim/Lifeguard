@@ -235,6 +235,8 @@ lifeguard.mobile = {
 				$('#red_cross_swimming_instructor .water_safety_instructor2',this.target).addClass("ui-state-disabled");
 				$('#red_cross_swimming_instructor .water_safety_instructor_recertification',this.target).addClass("ui-state-disabled");
 				
+				$('#red_cross_swimming_instructor #available_after_age_13',this.target).css( "display", "none" );
+
 			} else if (ageIndex == 2){
 				$('#red_cross_swimming_instructor_div_sorry',this.target).css( "display", "none" );
 				$('#red_cross_swimming_instructor_div_buttons .water_safety_instructor',this.target).css( "display", "none" );
