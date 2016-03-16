@@ -232,15 +232,22 @@ lifeguard.mobile = {
 	processResult_bcrpa_aquafit_instructor: function(ageIndex){
 			this.init_bcrpa_aquafit_instructor();
 			if (ageIndex == 0){
-				$('#bcrpa_aquafit_instructor_div_buttons',this.target).css( "display", "none" );
-			} else if (ageIndex == 1){
-				$('#bcrpa_aquafit_instructor_div_buttons',this.target).css( "display", "none" );
-			} else if (ageIndex == 2){
-				$('#bcrpa_aquafit_instructor_div_sorry',this.target).css( "display", "none" );
+				$('#bcrpa_aquafit_instructor_div_buttons .emergency_first_aid',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor_div_buttons .standard_first_aid',this.target).addClass("ui-state-disabled");
 				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory',this.target).addClass("ui-state-disabled");
 				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit',this.target).addClass("ui-state-disabled");
+
+			} else if (ageIndex == 1){
+				$('#bcrpa_aquafit_instructor_div_buttons .emergency_first_aid',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor_div_buttons .standard_first_aid',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit',this.target).addClass("ui-state-disabled");
+
+			} else if (ageIndex == 2){
+				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory',this.target).addClass("ui-state-disabled");
+				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit',this.target).addClass("ui-state-disabled");
+
 			} else if (ageIndex == 3){
-				$('#bcrpa_aquafit_instructor_div_sorry',this.target).css( "display", "none" );
 				$('#bcrpa_aquafit_instructor_div_buttons .fitness_theory',this.target).addClass("ui-state-disabled");
 				$('#bcrpa_aquafit_instructor_div_buttons .instructor_aquafit',this.target).addClass("ui-state-disabled");
 			} else if (ageIndex == 4){
