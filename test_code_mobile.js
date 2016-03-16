@@ -44,6 +44,12 @@ lifeguard.mobile = {
 					$('#bcrpa_aquafit_instructor',this.target).css( "visibility", "visible" );
 					$('#bcrpa_aquafit_instructor',this.target).css( "opacity", "1" );
 				}, 0);			
+		}else if (index == 4) {
+			$("#pool_operator",this.target).css('display', '');
+				setTimeout(function(){
+					$('#pool_operator',this.target).css( "visibility", "visible" );
+					$('#pool_operator',this.target).css( "opacity", "1" );
+				}, 0);			
 		}
 	
 	},
