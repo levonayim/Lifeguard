@@ -50,6 +50,12 @@ lifeguard.mobile = {
 					$('#pool_operator',this.target).css( "visibility", "visible" );
 					$('#pool_operator',this.target).css( "opacity", "1" );
 				}, 0);			
+		}else if (index == 5) {
+			$("#first_aid",this.target).css('display', '');
+				setTimeout(function(){
+					$('#first_aid',this.target).css( "visibility", "visible" );
+					$('#first_aid',this.target).css( "opacity", "1" );
+				}, 0);			
 		}
 	
 	},
