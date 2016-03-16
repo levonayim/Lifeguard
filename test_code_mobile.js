@@ -122,8 +122,13 @@ lifeguard.mobile = {
 		//first enable all buttons and make all visible
 		$('#pool_operator_div_buttons a',this.target).removeClass("ui-state-disabled");
 		$('#pool_operator_div_buttons a',this.target).css( "visibility", "visible" );
-
+		//make both Available after the age visible
 		$('#pool_operator_div_available .available_after_age',this.target).css( "visibility", "visible" );
+
+		//make both Available after the age visible
+		$('#pool_operator_div_available #available_after_age13',this.target).css( "visibility", "visible" );
+		$('#pool_operator_div_available #available_after_age14',this.target).css( "visibility", "visible" );
+		$('#pool_operator_div_available #available_after_age15',this.target).css( "visibility", "visible" );
 	},
 
 	init_first_aid: function(){
@@ -133,10 +138,13 @@ lifeguard.mobile = {
 		//first enable all buttons and make all visible
 		$('#first_aid_div_buttons a',this.target).removeClass("ui-state-disabled");
 		$('#first_aid_div_buttons a',this.target).css( "visibility", "visible" );
-
-		$('#first_aid_div_available .available_after_age',this.target).css( "visibility", "visible" );
-		
 		//make both Available after the age visible
+		$('#first_aid_div_available .available_after_age',this.target).css( "visibility", "visible" );
+
+		//make both Available after the age visible
+		$('#first_aid_div_available #available_after_age13',this.target).css( "visibility", "visible" );
+		$('#first_aid_div_available #available_after_age14',this.target).css( "visibility", "visible" );
+		$('#first_aid_div_available #available_after_age15',this.target).css( "visibility", "visible" );
 	},
 	processResult_lifeguard: function(ageIndex){
 		this.init_lifeguard();
@@ -301,6 +309,46 @@ lifeguard.mobile = {
 				$('#bcrpa_aquafit_instructor #available_after_age_15',this.target).css( "display", "none" );
 			} 	
 	},
+	processResult_pool_operator: function(ageIndex){
+		this.init_pool_operator();
+		if (ageIndex == 0){
+			$('#pool_operator .bronze_medallion',this.target).addClass("ui-state-disabled");
+			$('#pool_operator .bronze_cross',this.target).addClass("ui-state-disabled");
+			$('#pool_operator .bronze_medallion_cross_combination',this.target).addClass("ui-state-disabled");
+			$('#pool_operator .emergency_first_aid',this.target).addClass("ui-state-disabled");
+			$('#pool_operator .standard_first_aid',this.target).addClass("ui-state-disabled");
+			$('#pool_operator .water_safety_instructor1',this.target).addClass("ui-state-disabled");
+			$('#pool_operator .water_safety_instructor2',this.target).addClass("ui-state-disabled");
+			$('#pool_operator .water_safety_instructor_recertification',this.target).addClass("ui-state-disabled");
+			
+		} else if (ageIndex == 1){
+			$('#pool_operator .emergency_first_aid',this.target).addClass("ui-state-disabled");
+			$('#pool_operator .standard_first_aid',this.target).addClass("ui-state-disabled");
+			$('#pool_operator .water_safety_instructor1',this.target).addClass("ui-state-disabled");
+			$('#pool_operator .water_safety_instructor2',this.target).addClass("ui-state-disabled");
+			$('#pool_operator .water_safety_instructor_recertification',this.target).addClass("ui-state-disabled");
+
+			$('#pool_operator #available_after_age_13',this.target).css( "display", "none" );
+
+		} else if (ageIndex == 2){
+			$('#pool_operator .water_safety_instructor1',this.target).addClass("ui-state-disabled");
+			$('#pool_operator .water_safety_instructor2',this.target).addClass("ui-state-disabled");
+			$('#pool_operator .water_safety_instructor_recertification',this.target).addClass("ui-state-disabled");
+			
+			$('#pool_operator #available_after_age_13',this.target).css( "display", "none" );
+			$('#pool_operator #available_after_age_14',this.target).css( "display", "none" );
+
+		} else if (ageIndex == 3){
+			$('#pool_operator #available_after_age_13',this.target).css( "display", "none" );
+			$('#pool_operator #available_after_age_14',this.target).css( "display", "none" );
+			$('#pool_operator #available_after_age_15',this.target).css( "display", "none" );
+
+		} else if (ageIndex == 4){
+			$('#pool_operator #available_after_age_13',this.target).css( "display", "none" );
+			$('#pool_operator #available_after_age_14',this.target).css( "display", "none" );
+			$('#pool_operator #available_after_age_15',this.target).css( "display", "none" );
+		} 	
+	},
 	showResultClasses: function(categoryIndex,ageIndex){
 		console.log( "showResultClasses...ageIndex:"+ ageIndex);
 		if (categoryIndex==0){
@@ -311,6 +359,8 @@ lifeguard.mobile = {
 			this.processResult_red_cross_swimming_instructor(ageIndex);
 		}else if (categoryIndex==3){
 			this.processResult_bcrpa_aquafit_instructor(ageIndex);
+		}else if (categoryIndex==4){
+			this.processResult_pool_operator(ageIndex);
 		}
 	},
 	
