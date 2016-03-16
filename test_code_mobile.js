@@ -305,7 +305,7 @@ lifeguard.mobile = {
 
 			} else if (ageIndex == 4){
 				$('#bcrpa_aquafit_instructor #available_after_age_14',this.target).css( "display", "none" );
-				$('#bcrpa_aquafit_instructor #available_after_age_15',this.target).css( "display", "none" );
+				$('#bcrpa_aquafit_instructor #available_after_age_16',this.target).css( "display", "none" );
 			} 	
 	},
 	processResult_pool_operator: function(ageIndex){
